@@ -13,8 +13,8 @@
             "process": "meta03/javaScriptSimple_cnade",
             "port": "blah",
             "metadata": {
-                "x": 360,
-                "y": 144,
+                "x": 324,
+                "y": 0,
                 "width": 72,
                 "height": 72
             }
@@ -32,7 +32,7 @@
             }
         },
         "out1": {
-            "process": "meta03/simple_xqe1h",
+            "process": "abc01234",
             "port": "out",
             "metadata": {
                 "x": 396,
@@ -44,10 +44,10 @@
     },
     "groups": [],
     "processes": {
-        "meta03/simple_xqe1h": {
+        "abc01234": {
             "component": "meta03/simple",
             "metadata": {
-                "label": "meta03/simple",
+                "label": "abc01234",
                 "x": 252,
                 "y": -180,
                 "width": 72,
@@ -68,7 +68,7 @@
     "connections": [
         {
             "src": {
-                "process": "meta03/simple_xqe1h",
+                "process": "abc01234",
                 "port": "out"
             },
             "tgt": {
@@ -87,7 +87,7 @@
         {
             "data": "aaaaa",
             "tgt": {
-                "process": "meta03/simple_xqe1h",
+                "process": "abc01234",
                 "port": "in"
             }
         }
