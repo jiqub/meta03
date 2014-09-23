@@ -6,8 +6,59 @@
         }
     },
     "inports": {},
-    "outports": {},
+    "outports": {
+        "out": {
+            "process": "meta03/javaScriptSimple_cnade",
+            "port": "out",
+            "metadata": {
+                "x": 756,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "meta03/simple_xqe1h": {
+            "component": "meta03/simple",
+            "metadata": {
+                "label": "meta03/simple",
+                "x": 360,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "meta03/javaScriptSimple_cnade": {
+            "component": "meta03/javaScriptSimple",
+            "metadata": {
+                "label": "meta03/javaScriptSimple",
+                "x": 612,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "meta03/simple_xqe1h",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "meta03/javaScriptSimple_cnade",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "aaaaa",
+            "tgt": {
+                "process": "meta03/simple_xqe1h",
+                "port": "in"
+            }
+        }
+    ]
 }
