@@ -20,11 +20,11 @@
     },
     "groups": [],
     "processes": {
-        "meta03/simple_xqe1h": {
+        "blah": {
             "component": "meta03/simple",
             "metadata": {
-                "label": "meta03/simple",
-                "x": 360,
+                "label": "blah",
+                "x": 432,
                 "y": 252,
                 "width": 72,
                 "height": 72
@@ -44,7 +44,7 @@
     "connections": [
         {
             "src": {
-                "process": "meta03/simple_xqe1h",
+                "process": "blah",
                 "port": "out"
             },
             "tgt": {
@@ -56,7 +56,7 @@
         {
             "data": "aaaaa",
             "tgt": {
-                "process": "meta03/simple_xqe1h",
+                "process": "blah",
                 "port": "in"
             }
         }
