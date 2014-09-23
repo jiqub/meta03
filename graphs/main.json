@@ -2,12 +2,94 @@
     "properties": {
         "name": "main",
         "environment": {
-            "type": "noflo-browser"
+            "type": "noflo-browser",
+            "content": "preview"
+        },
+        "description": "a description",
+        "icon": "teste.png"
+    },
+    "inports": {
+        "blah": {
+            "process": "meta03/javaScriptSimple_cnade",
+            "port": "blah",
+            "metadata": {
+                "x": 360,
+                "y": 144,
+                "width": 72,
+                "height": 72
+            }
         }
     },
-    "inports": {},
-    "outports": {},
+    "outports": {
+        "out": {
+            "process": "meta03/javaScriptSimple_cnade",
+            "port": "out",
+            "metadata": {
+                "x": 648,
+                "y": -252,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "out1": {
+            "process": "meta03/simple_xqe1h",
+            "port": "out",
+            "metadata": {
+                "x": 396,
+                "y": -324,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "meta03/simple_xqe1h": {
+            "component": "meta03/simple",
+            "metadata": {
+                "label": "meta03/simple",
+                "x": 252,
+                "y": -180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "meta03/javaScriptSimple_cnade": {
+            "component": "meta03/javaScriptSimple",
+            "metadata": {
+                "label": "meta03/javaScriptSimple",
+                "x": 504,
+                "y": -72,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "meta03/simple_xqe1h",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "meta03/javaScriptSimple_cnade",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "hum",
+            "tgt": {
+                "process": "meta03/javaScriptSimple_cnade",
+                "port": "blah"
+            }
+        },
+        {
+            "data": "aaaaa",
+            "tgt": {
+                "process": "meta03/simple_xqe1h",
+                "port": "in"
+            }
+        }
+    ]
 }
