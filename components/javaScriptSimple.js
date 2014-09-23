@@ -20,5 +20,6 @@ exports.getComponent = function () {
     c.outPorts.out.send(payload);
   });
   c.outPorts.add('out');
+  c.outPorts.add('out2');
   return c;
 };
