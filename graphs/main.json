@@ -2,8 +2,11 @@
     "properties": {
         "name": "main",
         "environment": {
-            "type": "noflo-browser"
-        }
+            "type": "noflo-browser",
+            "content": "preview"
+        },
+        "description": "a description",
+        "icon": "teste.png"
     },
     "inports": {},
     "outports": {
@@ -20,10 +23,10 @@
     },
     "groups": [],
     "processes": {
-        "blah": {
+        "meta03/simple_xqe1h": {
             "component": "meta03/simple",
             "metadata": {
-                "label": "blah",
+                "label": "meta03/simple",
                 "x": 432,
                 "y": 252,
                 "width": 72,
@@ -44,7 +47,7 @@
     "connections": [
         {
             "src": {
-                "process": "blah",
+                "process": "meta03/simple_xqe1h",
                 "port": "out"
             },
             "tgt": {
@@ -56,7 +59,7 @@
         {
             "data": "aaaaa",
             "tgt": {
-                "process": "blah",
+                "process": "meta03/simple_xqe1h",
                 "port": "in"
             }
         }
